@@ -1,3 +1,4 @@
+
 '''
 NAME
 	reverse-complement.py
@@ -16,7 +17,7 @@ CATEGORY
     
 USAGE
 
-    % python reverse-complement.py -i 
+    % python reverse-complement.py -i FILENAME
     
     example
     
