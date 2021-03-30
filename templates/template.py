@@ -1,30 +1,30 @@
 ´´´
-NAME
+## NAME
 
 
-VERSION
+## VERSION
 
 
-AUTHOR
+## AUTHOR
 
     Zara Paulina Martinez Sanchez
 
-DATE
+## DATE
 
 
-DESCRIPTION
+## DESCRIPTION
 
 
-CATEGORY
+## CATEGORY
 
 
-USAGE
+## USAGE
 
 
-ARGUMENTS
+## ARGUMENTS
 
 
-SEE ALSO
+## SEE ALSO
 
 
 ´´´
