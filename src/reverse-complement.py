@@ -7,7 +7,7 @@ VERSION
     1.0
     
 AUTHOR
-     ZARA MARTINEZ, NAKAHARA CHUYA	
+     ZARA MARTINEZ, NAKAHARA CHUYA, DAZAI OSAMU	
     
 DESCRIPTION
 	Make the reverse complement of DNA sequence

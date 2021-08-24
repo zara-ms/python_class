@@ -1,3 +1,4 @@
 gcacgactactcgtcatcatcattcg
 ggccttaaa
 gccctttaaaaaagg
+gggggccccctttttaaaaa
