@@ -22,5 +22,8 @@ USAGE
     example
     
     % python reverse-complement -i sequence.txt Hola.txt
-
+    
+EXTRA LYRIC
+	Watashi wa anata shinju soretema kyomei iketa kita-desu, kito sodesu
+	Dazai
 '''
