@@ -26,7 +26,7 @@
 
 ## EXAMPLES
 
-        violin = cuerda('madera', 'europeo', 'Glin glin')
+        violin = Cuerda('madera', 'europeo', 'Glin glin')
         print(violin.__dict__)
         violin.emite_musica()
 
@@ -40,7 +40,7 @@
 
 """
 
-class instrumento():
+class Instrumento():
 
 #   Atributos
     def __init__(self, material, origen, sonido):
@@ -55,27 +55,27 @@ class instrumento():
 
 # Heredar la clase intsrumento
 
-class viento(instrumento):
+class Viento(Instrumento):
 
 #   Overriding del metodo
     def emite_musica(self):
         print(self.sonido)
 
 
-class cuerda(instrumento):
+class Cuerda(Instrumento):
 
 # Polimorifismo del netodo
     def emite_musica(self):
         print(self.sonido)
 
 
-class percusion(instrumento):
+class Percusion(Instrumento):
 
 #   Polimorfismo del metodo
     def emite_musica(self):
         print(self.sonido)
 
 
-violin = cuerda('madera', 'europeo', 'Glin glin')
+violin = Cuerda('madera', 'europeo', 'Glin glin')
 print(violin.__dict__)
 violin.emite_musica()
