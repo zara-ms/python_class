@@ -1,0 +1,133 @@
+"""
+FECHA  07/09/2021
+MATERIA: BIOPYTHON
+TEMA: SECUENCIAS
+
+"""
+
+
+import Bio.Seq
+
+from Bio.Seq import Seq, MutableSeq
+
+
+# Definir la secuencia
+objeto = Seq("ATCG")
+print(str(objeto))
+
+# Cambiar nucleotidos
+mutable = MutableSeq(objeto)
+mutable[0] = "N"
+
+# Obtener cadena complementaria y reversa complementaria
+print(objeto.complement())
+print(objeto.reverse_complement())
+
+# Detener la traduccion en presencia de un codon de paro
+print(objeto.translate(to_stop=True))
+
+# Obtener transcritos
+rna = objeto.transcribe()
+print(rna.back_transcribe())
+
+print(objeto[0:2])
+
+import re
+
+for codon in re.findall(r"(.{3})", str(objeto)):
+    print(codon)
+
+
+from Bio.SeqUtils import nt_search, GC, molecular_weight
+
+
+# Buscar un patron en la secuencia
+patron = Seq("ACG")
+secuencia = Seq("ATCAACGCCCTTACATCGGGACGGGGATC")
+resultado = nt_search(str(secuencia), patron)
+print(resultado)
+
+# Sacar el contenido de GC
+print(GC(secuencia))
+
+# Obtener peso molecular
+print(molecular_weight(secuencia))
+
+
+## EJERCICIO 1
+## Obtener cadena protéica de cualquiera de sus ORFs
+
+dna = Seq("AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG")
+inicio = Seq("ATG")
+pos = nt_search(str(dna), inicio)
+
+for i in range(1, len(pos)):
+    sec_prot = dna[i:]
+    proteina = sec_prot.translate(to_stop=True)
+
+
+from Bio import SeqIO
+
+
+# Archivos Fasta
+filename = "files/seq.nt.fa"
+for seq_record in SeqIO.parse(filename, "fasta"):
+    print("ID {}".format(seq_record.id))
+    print("len {}".format(len(seq_record)))
+    print("Traduccion {}".format(seq_record.translate()))
+
+# Leer archivo en diccionario
+id_dict = SeqIO.to_dict(SeqIO.parse(filename, "fasta"))
+print(id_dict["seq4"].seq.transcribe())
+
+
+## EJERCICIO 2
+## Imprimir codones (separados por un espacio) de cada secuencia en formato FASTA. ARCHIVO
+
+id_dict = SeqIO.to_dict(SeqIO.parse(filename, "fasta"))
+
+for i in id_dict:
+    print(">{}".format(i))
+    sec = id_dict[i].seq
+    for codon in re.findall(r"(.{3})", str(sec)):
+        print(codon, end="\t")
+    print("\n")
+
+id_list = list(SeqIO.parse(filename, "fasta"))
+print(id_list[-1].seq)
+
+# Archivos grandes
+record_dict = SeqIO.index((filename, "fasta"))
+print(record_dict["seq1"])
+seq_ids = ["seq2", "seq1"]
+
+with open("files/filtrado.fasta", "m") as out_handle:
+    for record in SeqIO.parse(filename, "fasta"):
+        if record.id in seq_ids:
+            SeqIO.write(record, out_handle, "fasta")
+
+# Leer archivos FastQ
+n = 0
+for record in SeqIO.parse("files/sample.fastq", "fastq"):
+    if n < 2:
+        print("%s %s" % (record.id, record.seq))
+        n += 1
+    else:break
+
+print(record.letter_annotations("phred_quality"))
+
+## EJERCICIO 3
+# Obtener número de lecturas cuyo promedio de calidad está debajo de un umbral dado ARCHIVO
+
+path = "files/sample.fastq"
+
+def corte_calidad(path, umbral):
+    mala = []
+    for record in SeqIO.parse(path, "fastq"):
+        promedio = sum(record.letter_annotations["phred_quality"])/len(record.letter_annotations["phred_quality"])
+        if (promedio < umbral):
+            temp = (promedio, record.id)
+            mala_calidad.append(temp)
+    print("{} secuencias con promedio menor al umbral:{}\n".format(len(mala_calidad, umbral)))
+
+
