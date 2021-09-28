@@ -90,3 +90,16 @@ for modelo in obj_struc:
                     cys_list.append(residuo)
 
 
+for atom in cys_list[0]:
+    print(atom.elemento, atom.identificador)
+
+## EJERCICIO 4
+
+for cist_1 in cys_list:
+    for cist_2 in cys_list:
+        if not (cist_1 == cist_2):
+            if (cist_1['SG'] - cist_2['SG']) < 8:
+                # Coordenadas de los átomos
+                print(cist_1['SG'].coord, cist_2['SG'].coord)
+                # Pares de ID de los residuos
+                print(cist_1.id, cist_2.id)
