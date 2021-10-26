@@ -49,54 +49,69 @@
 
 	Output:
 		<GO_in_ID.txt>
-		No existe el GO:0046755 en el IDA0A0K2RVI7_9BETC
-		No existe el GO:0046761 en el IDA0A0K2RVI7_9BETC
-		No existe el GO:0046760 en el IDA0A0K2RVI7_9BETC
-		No existe el GO:0039702 en el IDA0A0K2RVI7_9BETC
-		No existe el GO:0046765 en el IDA0A0K2RVI7_9BETC
-		No existe el GO:0046762 en el IDA0A0K2RVI7_9BETC
-		No existe el GO:0046755 en el IDA8R4D4_9BETC
-		No existe el GO:0046761 en el IDA8R4D4_9BETC
-		No existe el GO:0046760 en el IDA8R4D4_9BETC
-		No existe el GO:0039702 en el IDA8R4D4_9BETC
-		No existe el GO:0046765 en el IDA8R4D4_9BETC
-		No existe el GO:0046762 en el IDA8R4D4_9BETC
-		No existe el GO:0046755 en el IDPOLG_YEFV1
-		No existe el GO:0046761 en el IDPOLG_YEFV1
-		No existe el GO:0046760 en el IDPOLG_YEFV1
-		No existe el GO:0039702 en el IDPOLG_YEFV1
-		No existe el GO:0046765 en el IDPOLG_YEFV1
-		No existe el GO:0046762 en el IDPOLG_YEFV1
-		No existe el GO:0046755 en el IDPOLG_DEN1W
-		No existe el GO:0046761 en el IDPOLG_DEN1W
-		No existe el GO:0046760 en el IDPOLG_DEN1W
-		No existe el GO:0039702 en el IDPOLG_DEN1W
-		No existe el GO:0046765 en el IDPOLG_DEN1W
-		No existe el GO:0046762 en el IDPOLG_DEN1W
-		No existe el GO:0046755 en el IDQ6W352_CVEN9
-		No existe el GO:0046761 en el IDQ6W352_CVEN9
-		No existe el GO:0046760 en el IDQ6W352_CVEN9
-		No existe el GO:0039702 en el IDQ6W352_CVEN9
-		No existe el GO:0046765 en el IDQ6W352_CVEN9
-		No existe el GO:0046762 en el IDQ6W352_CVEN9
-		No existe el GO:0046755 en el IDD9SV67_CLOC7
-		No existe el GO:0046761 en el IDD9SV67_CLOC7
-		No existe el GO:0046760 en el IDD9SV67_CLOC7
-		No existe el GO:0039702 en el IDD9SV67_CLOC7
-		No existe el GO:0046765 en el IDD9SV67_CLOC7
-		No existe el GO:0046762 en el IDD9SV67_CLOC7
-		No existe el GO:0046755 en el IDA9KSF7_LACP7
-		No existe el GO:0046761 en el IDA9KSF7_LACP7
-		No existe el GO:0046760 en el IDA9KSF7_LACP7
-		No existe el GO:0039702 en el IDA9KSF7_LACP7
-		No existe el GO:0046765 en el IDA9KSF7_LACP7
-		No existe el GO:0046762 en el IDA9KSF7_LACP7
-		No existe el GO:0046755 en el IDB8I7R6_RUMCH
-		No existe el GO:0046761 en el IDB8I7R6_RUMCH
-		No existe el GO:0046760 en el IDB8I7R6_RUMCH
-		No existe el GO:0039702 en el IDB8I7R6_RUMCH
-		No existe el GO:0046765 en el IDB8I7R6_RUMCH
-		No existe el GO:0046762 en el IDB8I7R6_RUMCH
+		El ID es: A0A0K2RVI7_9BETC
+	Nombre de proteina: RecName: Full=Envelope small membrane protein {ECO:0000256|HAMAP-Rule:MF_04204}
+	Nombre y definicion del GO: GO:0046760C:host cell Golgi membrane
+	Organismo: Equine coronavirus.
+	Localizacion subcelular
+	Localización subcelular: SUBCELLULAR LOCATION: Host Golgi apparatus membrane {ECO:0000256|HAMAP- Rule:MF_04204}; Single-pass type III membrane protein {ECO:0000256|HAMAP-Rule:MF_04204}. Note=The cytoplasmic tail functions as a Golgi complex-targeting signal. {ECO:0000256|HAMAP-Rule:MF_04204}.
+	El ID es: A8R4D4_9BETC
+	Nombre de proteina: RecName: Full=Envelope small membrane protein {ECO:0000256|HAMAP-Rule:MF_04204}
+	Nombre y definicion del GO: GO:0046760BAS18868.1
+	Organismo: Equine coronavirus.
+	Localizacion subcelular
+	Localización subcelular: SUBCELLULAR LOCATION: Host Golgi apparatus membrane {ECO:0000256|HAMAP- Rule:MF_04204}; Single-pass type III membrane protein {ECO:0000256|HAMAP-Rule:MF_04204}. Note=The cytoplasmic tail functions as a Golgi complex-targeting signal. {ECO:0000256|HAMAP-Rule:MF_04204}.
+	El ID es: POLG_YEFV1
+	Nombre de proteina: RecName: Full=Genome polyprotein
+	Nombre y definicion del GO: GO:0046762AAC54267.1
+	Organismo: Yellow fever virus (strain 17D vaccine) (YFV).
+	Localizacion subcelular
+	Localización subcelular: SUBCELLULAR LOCATION: [Capsid protein C]: Virion {ECO:0000250|UniProtKB:P17763}. Host nucleus {ECO:0000250|UniProtKB:P17763}. Host cytoplasm, host perinuclear region {ECO:0000250|UniProtKB:P17763}. Host cytoplasm {ECO:0000250|UniProtKB:P17763}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Peptide pr]: Secreted {ECO:0000250|UniProtKB:P17763}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Small envelope protein M]: Virion membrane {ECO:0000269|PubMed:15507646}; Multi-pass membrane protein {ECO:0000269|PubMed:15507646}. Host endoplasmic reticulum membrane {ECO:0000269|PubMed:15507646}; Multi-pass membrane protein {ECO:0000255}. Note=ER membrane retention is mediated by the transmembrane domains. {ECO:0000269|PubMed:15507646}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Envelope protein E]: Virion membrane {ECO:0000305}; Multi-pass membrane protein {ECO:0000269|PubMed:15507646}. Host endoplasmic reticulum membrane {ECO:0000269|PubMed:3008425}; Multi-pass membrane protein {ECO:0000255}. Note=ER membrane retention is mediated by the transmembrane domains. {ECO:0000269|PubMed:15507646}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Non-structural protein 1]: Secreted {ECO:0000250|UniProtKB:P17763}. Host endoplasmic reticulum membrane; Peripheral membrane protein; Lumenal side {ECO:0000250|UniProtKB:P17763}. Note=Located in RE-derived vesicles hosting the replication complex. {ECO:0000250|UniProtKB:Q9Q6P4}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Non-structural protein 2A]: Host endoplasmic reticulum membrane {ECO:0000250|UniProtKB:P17763}; Multi-pass membrane protein {ECO:0000250|UniProtKB:P17763}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Serine protease subunit NS2B]: Host endoplasmic reticulum membrane; Multi-pass membrane protein {ECO:0000250|UniProtKB:P17763}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Serine protease NS3]: Host endoplasmic reticulum membrane {ECO:0000255|PROSITE-ProRule:PRU00860}; Peripheral membrane protein {ECO:0000255|PROSITE-ProRule:PRU00860}; Cytoplasmic side {ECO:0000255|PROSITE-ProRule:PRU00860}. Note=Remains non-covalently associated to serine protease subunit NS2B. {ECO:0000255|PROSITE- ProRule:PRU00860}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Non-structural protein 4A]: Host endoplasmic reticulum membrane {ECO:0000250|UniProtKB:P17763}; Multi-pass membrane protein {ECO:0000250|UniProtKB:P17763}. Note=Located in RE-associated vesicles hosting the replication complex. {ECO:0000250|UniProtKB:P17763}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Non-structural protein 4B]: Host endoplasmic reticulum membrane {ECO:0000250|UniProtKB:P17763}; Multi-pass membrane protein {ECO:0000250|UniProtKB:P17763}. Note=Located in RE-derived vesicles hosting the replication complex. {ECO:0000250|UniProtKB:Q9Q6P4}.
+	Localización subcelular: SUBCELLULAR LOCATION: [RNA-directed RNA polymerase NS5]: Host endoplasmic reticulum membrane; Peripheral membrane protein; Cytoplasmic side. Host nucleus {ECO:0000250|UniProtKB:P17763}. Note=Located in RE-associated vesicles hosting the replication complex. NS5 protein is mainly localized in the nucleus rather than in ER vesicles. {ECO:0000250|UniProtKB:P17763}.
+	Referencia en PROSITE ('PROSITE', 'PS51527', 'FLAVIVIRUS_NS2B', '1')
+	Referencia en PROSITE ('PROSITE', 'PS51528', 'FLAVIVIRUS_NS3PRO', '1')
+	Referencia en PROSITE ('PROSITE', 'PS51192', 'HELICASE_ATP_BIND_1', '1')
+	Referencia en PROSITE ('PROSITE', 'PS51194', 'HELICASE_CTER', '1')
+	Referencia en PROSITE ('PROSITE', 'PS50507', 'RDRP_SSRNA_POS', '1')
+	Referencia en PROSITE ('PROSITE', 'PS51591', 'RNA_CAP01_NS5_MT', '1')
+	El ID es: POLG_DEN1W
+	Nombre de proteina: RecName: Full=Genome polyprotein
+	Nombre y definicion del GO: GO:0046762AAA42940.1
+	Organismo: Dengue virus type 1 (strain Nauru/West Pac/1974) (DENV-1).
+	Localizacion subcelular
+	Localización subcelular: SUBCELLULAR LOCATION: [Capsid protein C]: Virion. Host nucleus {ECO:0000269|PubMed:18420804}. Host cytoplasm {ECO:0000269|PubMed:19889084}. Host cytoplasm, host perinuclear region {ECO:0000269|PubMed:19889084}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Peptide pr]: Secreted {ECO:0000269|PubMed:19759134}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Small envelope protein M]: Virion membrane {ECO:0000269|PubMed:9971841}; Multi-pass membrane protein {ECO:0000255}. Host endoplasmic reticulum membrane {ECO:0000269|PubMed:9971841}; Multi-pass membrane protein {ECO:0000255}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Envelope protein E]: Virion membrane {ECO:0000269|PubMed:20181718}; Multi-pass membrane protein {ECO:0000255}. Host endoplasmic reticulum membrane {ECO:0000269|PubMed:20181718}; Multi-pass membrane protein {ECO:0000255}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Non-structural protein 1]: Secreted {ECO:0000269|PubMed:10364366, ECO:0000269|PubMed:26655246}. Host endoplasmic reticulum membrane; Peripheral membrane protein; Lumenal side {ECO:0000305}. Note=Located in RE-derived vesicles hosting the replication complex. {ECO:0000250|UniProtKB:Q9Q6P4}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Non-structural protein 2A]: Host endoplasmic reticulum membrane {ECO:0000269|PubMed:23408612}; Multi-pass membrane protein {ECO:0000269|PubMed:23408612}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Serine protease subunit NS2B]: Host endoplasmic reticulum membrane; Multi-pass membrane protein {ECO:0000269|PubMed:26072288}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Serine protease NS3]: Host endoplasmic reticulum membrane {ECO:0000255|PROSITE-ProRule:PRU00860}; Peripheral membrane protein {ECO:0000255|PROSITE-ProRule:PRU00860}; Cytoplasmic side {ECO:0000255|PROSITE-ProRule:PRU00860}. Note=Remains non-covalently associated to serine protease subunit NS2B. {ECO:0000255|PROSITE- ProRule:PRU00860}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Non-structural protein 4A]: Host endoplasmic reticulum membrane {ECO:0000269|PubMed:17276984}; Multi-pass membrane protein {ECO:0000269|PubMed:17276984}. Host mitochondrion {ECO:0000269|PubMed:27252539}. Note=Located in RE-associated vesicles hosting the replication complex. Interacts with host MAVS in the mitochondrion-associated endoplasmic reticulum membranes. {ECO:0000269|PubMed:17276984, ECO:0000269|PubMed:27252539}.
+	Localización subcelular: SUBCELLULAR LOCATION: [Non-structural protein 4B]: Host endoplasmic reticulum membrane {ECO:0000269|PubMed:16436383}; Multi-pass membrane protein {ECO:0000269|PubMed:16436383}. Note=Located in RE-derived vesicles hosting the replication complex. {ECO:0000250|UniProtKB:Q9Q6P4}.
+	Localización subcelular: SUBCELLULAR LOCATION: [RNA-directed RNA polymerase NS5]: Host endoplasmic reticulum membrane {ECO:0000305}; Peripheral membrane protein {ECO:0000305}; Cytoplasmic side {ECO:0000305}. Host nucleus {ECO:0000269|PubMed:16699025}. Note=Located in RE-associated vesicles hosting the replication complex. NS5 protein is mainly localized in the nucleus rather than in ER vesicles, especially in the DENV 2, 3, 4 serotypes. {ECO:0000303|PubMed:28441781}.
+	Referencia en PROSITE ('PROSITE', 'PS51527', 'FLAVIVIRUS_NS2B', '1')
+	Referencia en PROSITE ('PROSITE', 'PS51528', 'FLAVIVIRUS_NS3PRO', '1')
+	Referencia en PROSITE ('PROSITE', 'PS51192', 'HELICASE_ATP_BIND_1', '1')
+	Referencia en PROSITE ('PROSITE', 'PS51194', 'HELICASE_CTER', '1')
+	Referencia en PROSITE ('PROSITE', 'PS50507', 'RDRP_SSRNA_POS', '1')
+	Referencia en PROSITE ('PROSITE', 'PS51591', 'RNA_CAP01_NS5_MT', '1')
+	El ID es: Q6W352_CVEN9
+	Nombre de proteina: RecName: Full=Envelope small membrane protein {ECO:0000256|HAMAP-Rule:MF_04204}
+	Nombre y definicion del GO: GO:0046760C:integral component of membrane
+	Organismo: Equine coronavirus (isolate NC99) (ECoV).
+	Localizacion subcelular
+	Localización subcelular: SUBCELLULAR LOCATION: Host Golgi apparatus membrane {ECO:0000256|HAMAP- Rule:MF_04204}; Single-pass type III membrane protein {ECO:0000256|HAMAP-Rule:MF_04204}. Note=The cytoplasmic tail functions as a Golgi complex-targeting signal. {ECO:0000256|HAMAP-Rule:MF_04204}.
+
 
 
 ## GITHUB LINK
