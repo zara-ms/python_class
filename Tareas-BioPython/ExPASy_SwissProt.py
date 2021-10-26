@@ -122,8 +122,6 @@
 
 # Librerias a usar
 from Bio import ExPASy, SwissProt
-from Bio.ExPASy import Prosite, Prodoc, ScanProsite
-from Bio import Entrez
 
 # Poner nuestros correos electrónicos para sacar abstracts de Entrez
 # Entrez.email = "dgoretti@lcg.unam.mx"
