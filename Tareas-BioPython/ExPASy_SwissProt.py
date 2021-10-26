@@ -7,7 +7,9 @@ from Bio import SwissProt
 # Crear una función que tome una lista de terminos GO y una lista de IDs de UniProt
 def get_swissprot(go, ids):
     # Abrir archivo donde se guardara la informacion
-    (...)
+    file = open("GO_in_ID.txt", "w")
+    file.write("")
+    file.close()
 
     # Extraer archivos SwissProt de cada ID
     for ID in ids:
@@ -19,11 +21,17 @@ def get_swissprot(go, ids):
             # En caso de encontrarlo
             if record.cross_references[2][1] == GO:
                 # Obtener la informacion
+                file = open("GO_in_ID.txt", "a")
                 file.write('El ID es: ' + ID + '\n')
                 file.write('Nombre de proteina: ' + record.description.split(';')[0] + '\n')
                 file.write('Nombre y definicion del GO: ' + GO + record.cross_references[2][2] + '\n')
                 file.write('Organismo: ' + record.organism + '\n')
-
+                file.close()
+            # En caso de no encontrarlo, se indica en el archivo
+            else:
+                file = open("GO_in_ID.txt", "a")
+                file.write('No existe el ' + GO + 'en el ID' + ID + '\n')
+                file.close()
 
 
 GO_Terms = ["GO:0046755", "GO:0046761",
