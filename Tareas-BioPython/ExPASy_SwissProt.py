@@ -141,12 +141,12 @@ def get_swissprot(go, ids):
                         file.write('Localización subcelular: '+ comment + '\n')
 		for reference in record.cross_references:
                     if 'PROSITE' in reference:
-                        file.write(reference[1])
+                        file.write('Referencia en PROSITE ' + reference[1])
                 file.close()
             # En caso de no encontrarlo, se indica en el archivo
             else:
                 file = open("GO_in_ID.txt", "a")
-                file.write('No existe el ' + GO + ' en el ID' + ID + '\n')
+                file.write('No existe el ' + GO + ' en el ID ' + ID + '\n')
                 file.close()
                 
                 # Imprimir localización subcelular:
