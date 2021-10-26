@@ -20,8 +20,8 @@
 ## DESCRIPTION
 
 	Este programa cuenta con una funcion la cual extrae los archivos SwissProt de un ID particular y busca varios terminos GO
-	en el mismo, en caso de no encontrar algun GO se le notifica al usuario, en caso contrario obtiene el ID y nombre de la
-	proteina donde se encontro, el termino GO encontrado con su definicion, el organismo al que pertenece y localización subcelular.
+	en el mismo, en caso de encontrar algun GO obtiene el ID y nombre de la proteina donde se encontro, el termino GO encontrado 
+	con su definicion, el organismo al que pertenece, localización subcelular y docmentacion del prosite.
 
 ## CATEGORY
 
@@ -33,7 +33,7 @@
 		
 		[Abre el archivo donde se escribira el resultado, por cada ID extrae el archivo Swissprot, busca algun termino GO de la lista,
 		en caso de encontrarlo se escribe el ID, nombre de proteina, nombre y definicion del GO, organismo donde se encontro, localizacion
-		subcelular en caso de tener] 
+		subcelular en caso de tener y documentacion del prosite] 
 	
 
 ## EXAMPLES
