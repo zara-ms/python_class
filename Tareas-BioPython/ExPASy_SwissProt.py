@@ -10,7 +10,7 @@
 ## AUTHOR
 
 	Daniela Goretti Castillo Leon
-	Jose Rodelmar Ocampo Luna
+	Jose Rodelmar Ocampo Luna <joserodelmar@gmail.com>
 	Zara Paulina Martinez Sanchez <zaram042001@gmail.com>
 
 ## DATE
@@ -48,6 +48,56 @@
                  "A9KSF7_LACP7", "B8I7R6_RUMCH"]
 
 	Output:
+		<GO_in_ID.txt>
+		No existe el GO:0046755 en el IDA0A0K2RVI7_9BETC
+		No existe el GO:0046761 en el IDA0A0K2RVI7_9BETC
+		No existe el GO:0046760 en el IDA0A0K2RVI7_9BETC
+		No existe el GO:0039702 en el IDA0A0K2RVI7_9BETC
+		No existe el GO:0046765 en el IDA0A0K2RVI7_9BETC
+		No existe el GO:0046762 en el IDA0A0K2RVI7_9BETC
+		No existe el GO:0046755 en el IDA8R4D4_9BETC
+		No existe el GO:0046761 en el IDA8R4D4_9BETC
+		No existe el GO:0046760 en el IDA8R4D4_9BETC
+		No existe el GO:0039702 en el IDA8R4D4_9BETC
+		No existe el GO:0046765 en el IDA8R4D4_9BETC
+		No existe el GO:0046762 en el IDA8R4D4_9BETC
+		No existe el GO:0046755 en el IDPOLG_YEFV1
+		No existe el GO:0046761 en el IDPOLG_YEFV1
+		No existe el GO:0046760 en el IDPOLG_YEFV1
+		No existe el GO:0039702 en el IDPOLG_YEFV1
+		No existe el GO:0046765 en el IDPOLG_YEFV1
+		No existe el GO:0046762 en el IDPOLG_YEFV1
+		No existe el GO:0046755 en el IDPOLG_DEN1W
+		No existe el GO:0046761 en el IDPOLG_DEN1W
+		No existe el GO:0046760 en el IDPOLG_DEN1W
+		No existe el GO:0039702 en el IDPOLG_DEN1W
+		No existe el GO:0046765 en el IDPOLG_DEN1W
+		No existe el GO:0046762 en el IDPOLG_DEN1W
+		No existe el GO:0046755 en el IDQ6W352_CVEN9
+		No existe el GO:0046761 en el IDQ6W352_CVEN9
+		No existe el GO:0046760 en el IDQ6W352_CVEN9
+		No existe el GO:0039702 en el IDQ6W352_CVEN9
+		No existe el GO:0046765 en el IDQ6W352_CVEN9
+		No existe el GO:0046762 en el IDQ6W352_CVEN9
+		No existe el GO:0046755 en el IDD9SV67_CLOC7
+		No existe el GO:0046761 en el IDD9SV67_CLOC7
+		No existe el GO:0046760 en el IDD9SV67_CLOC7
+		No existe el GO:0039702 en el IDD9SV67_CLOC7
+		No existe el GO:0046765 en el IDD9SV67_CLOC7
+		No existe el GO:0046762 en el IDD9SV67_CLOC7
+		No existe el GO:0046755 en el IDA9KSF7_LACP7
+		No existe el GO:0046761 en el IDA9KSF7_LACP7
+		No existe el GO:0046760 en el IDA9KSF7_LACP7
+		No existe el GO:0039702 en el IDA9KSF7_LACP7
+		No existe el GO:0046765 en el IDA9KSF7_LACP7
+		No existe el GO:0046762 en el IDA9KSF7_LACP7
+		No existe el GO:0046755 en el IDB8I7R6_RUMCH
+		No existe el GO:0046761 en el IDB8I7R6_RUMCH
+		No existe el GO:0046760 en el IDB8I7R6_RUMCH
+		No existe el GO:0039702 en el IDB8I7R6_RUMCH
+		No existe el GO:0046765 en el IDB8I7R6_RUMCH
+		No existe el GO:0046762 en el IDB8I7R6_RUMCH
+
 
 ## GITHUB LINK
 
@@ -96,7 +146,7 @@ def get_swissprot(go, ids):
             # En caso de no encontrarlo, se indica en el archivo
             else:
                 file = open("GO_in_ID.txt", "a")
-                file.write('No existe el ' + GO + 'en el ID' + ID + '\n')
+                file.write('No existe el ' + GO + ' en el ID' + ID + '\n')
                 file.close()
                 
                 # Imprimir localización subcelular:
