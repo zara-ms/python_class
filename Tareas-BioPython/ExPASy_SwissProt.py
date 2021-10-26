@@ -1,8 +1,12 @@
 
 
 # Librerias a usar
-from Bio import ExPASy
-from Bio import SwissProt
+from Bio import ExPASy, SwissProt
+from Bio.ExPASy import Prosite, Prodoc, ScanProsite
+from Bio import Entrez
+
+# Poner nuestros correos electrónicos para sacar abstracts de Entrez
+# Entrez.email = "dgoretti@lcg.unam.mx"
 
 # Crear una función que tome una lista de terminos GO y una lista de IDs de UniProt
 def get_swissprot(go, ids):
@@ -32,6 +36,32 @@ def get_swissprot(go, ids):
                 file = open("GO_in_ID.txt", "a")
                 file.write('No existe el ' + GO + 'en el ID' + ID + '\n')
                 file.close()
+                
+                # Imprimir localización subcelular:
+                for comment in record.comments:
+                    type_c = comment.split(':')
+                    if type_c[0] == 'SUBCELLULAR LOCATION':
+                        print('Localización subcelular: ', comment, '\n')
+
+                # Abstract de fuente - Sacar ID de Pubmed
+                # print('Abstract de una de las fuentes: ')
+                # fetch_handle = Entrez.efetch(db="pubmed", id= id_pubmed, rettype="abstract", retmode="text")
+                # data = fetch_handle.read()
+                # fetch_handle.close()
+                # print(data)
+
+                # Imprimir PROSITE
+                for reference in record.cross_references:
+                    if 'PROSITE' in reference:
+                        print(reference[1])
+
+                        # handle = ExPASy.get_prosite_raw(reference[1])
+                        # record = Prosite.read(handle)
+                        # print(record.name)  # Imprime PAN
+
+                        # handle = ExPASy.get_prosite_raw(record.pdoc)
+                        # record = Prodoc.read(handle)
+                        # print(record.text)
 
 
 GO_Terms = ["GO:0046755", "GO:0046761",
