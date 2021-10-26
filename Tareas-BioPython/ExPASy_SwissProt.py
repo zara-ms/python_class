@@ -1,3 +1,50 @@
+"""
+## NAME
+
+	ExPASy_SwissProt.py
+
+## VERSION
+
+	[1.0]
+
+## AUTHOR
+
+	Daniela Goretti Castillo Leon
+	Jose Rodelmar Ocampo Luna
+	Zara Paulina Martinez Sanchez <zaram042001@gmail.com>
+
+## DATE
+
+	[25/10/2021]
+
+## DESCRIPTION
+	 
+
+## CATEGORY
+
+	Analysis
+
+## FUNCTIONS
+
+	
+
+## EXAMPLES
+
+	Input:
+		GO_Terms = ["GO:0046755", "GO:0046761",
+              "GO:0046760", "GO:0039702",
+              "GO:0046765", "GO:0046762"]
+		uniprot_IDs = ["A0A0K2RVI7_9BETC", "A8R4D4_9BETC",
+                 "POLG_YEFV1", "POLG_DEN1W",
+                 "Q6W352_CVEN9", "D9SV67_CLOC7",
+                 "A9KSF7_LACP7", "B8I7R6_RUMCH"]
+
+	Output:
+
+## GITHUB LINK
+
+	https://github.com/zara-ms/python_class/tree/master/Tareas-BioPython
+"""
 
 
 # Librerias a usar
