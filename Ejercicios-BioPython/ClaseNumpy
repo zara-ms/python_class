@@ -136,3 +136,101 @@ ej_lista = [[0,0,0]]*2  # Repite la lista 2 veces, la copia
 arrays -> homogeneos
 
 """
+import numpy as np
+import matplotlib.pyplot as plt
+import networkx as nx
+
+# Matriz
+# Uso de genfromtxt o loadtxt para leer la matriz de un documento
+count_matrix = np.array([ [3, 3, 0],
+                          [0, 0, 1],
+                          [1, 1, 0],
+                          [0, 0, 1],
+                          [1, 0, 4],
+                          [1, 2, 0]])
+
+## Obtener matriz de coexpresion
+# Donde la matriz es mayor a 0 sera 1 y si no sera 0
+count_matrix = np.where(count_matrix > 0, 1, 0)
+print(count_matrix)
+
+# Transponer la matriz para observar la expresion nivel gen
+print(count_matrix.T[0])  # Gen1
+
+## Compararla consigo misma
+# Interseccion de vectores
+print((count_matrix.T[0]) & (count_matrix.T[0])))
+
+# El pproducto punto de ambos vectores
+print(np.dot(count_matrix.T[0], count_matrix.T[0]))
+
+### Es una multiplicacion de matrices
+expresion = np.matmul(count_matrix.T, count_matrix)
+
+# Hacer un plot para su visualizacion
+plt.inshow(expresion)
+plt.colorbar()
+plt.show()
+
+# Visualizarlo con grafos
+G = nx.DiGraph(expresion)
+nx.draw(G, node_size = 900, with_labels=True)
+plt.show()
+
+"""
+SEEDS aleatorias
+
+import numpy as np
+
+np.random.seed(10)  # seed = 10
+
+"""
+
+## Secuencias aleatorias
+
+rom Bio.Seq import Seq
+import numpy as np
+def secuencia_aleatoria(tamano = 100, p = [0.5, 0.5, 0.5, 0.5],seed = None):
+    np.random.seed(seed) # posibilidad de reproducibilidad
+    DNA = list("ATGC")
+    #secuencia random con distribucion p
+    secuencia = Seq(''.join(np.random.choice(DNA, tamano, p)))
+    return(secuencia)
+# probemos
+secuencia = secuencia_aleatoria(25, p=[0.1,0.2,0.4,0.3])
+secuencia
+
+def seq_aleatorias(tamano = 100, p = [0.5, 0.5, 0.5, 0.5], seed = None,
+                   num_seq = 10, archivo = "files/SeqAleatorias.fasta"):
+    #escribamos archivo de secuencias!!
+    with open(archivo, 'w') as file:
+        for i in range(num_seq):
+            sec = secuencia_aleatoria(tamano, p, seed)
+            file.write(">Seq" + str(i) + "\n")
+            file.write(str(sec))
+            file.write("\n")
+    file.close()
+#####################################################
+
+from Bio import SeqIO
+import csv
+import re
+#funcion para busqueda de patrones en archivo fasta
+def busqueda_patron(fasta="files/SeqAleatorias.fasta", output="files/ejercicioNP.csv"):
+    tf_interes_mod = {"TF_1": 'ATG[GG|TAG]', "TF_2": 'T[TC|AA]GAAT',
+                      "TF_3": "GTATGCGGGG", "TF_4": "TAT[GT]CC",
+                      "TF_5": "TATATA[GT|TG]"}
+    outfile = open(output, "w")
+    writer = csv.writer(outfile)
+    for rec in SeqIO.parse(fasta, "fasta"):
+        # secuencia por analizar
+        seq = rec.seq
+        # array para guardar numero de coindicencias
+        tf_counts = np.empty((0), dtype="int")
+        for tf in tf_interes_mod.values():
+            counts = len(re.findall(tf, str(seq)))
+            tf_counts = np.append(tf_counts, [counts])
+        # escribir counts encontrados (iterable)
+        writer.writerows([tf_counts])
+    outfile.close()
+
