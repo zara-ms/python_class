@@ -1,0 +1,14 @@
+"""
+CLASE: 26/10/2021
+MATERIA: BIOPYTHON
+TEMA: PANDAS
+"""
+import pandas as pd
+
+serie = pd.Series([1, 2, 3, 4, 5], index = ['a', 'b', 'c', 'd', 'e'],
+	name = "Ejemplo serie")
+
+# Strings almacenados como tipo de dato Objeto
+# Se realizan operaciones por indices
+# Uso de loc y iloc para acceder a indices o no
+
