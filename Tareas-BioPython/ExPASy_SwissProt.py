@@ -85,6 +85,13 @@ def get_swissprot(go, ids):
                 file.write('Nombre de proteina: ' + record.description.split(';')[0] + '\n')
                 file.write('Nombre y definicion del GO: ' + GO + record.cross_references[2][2] + '\n')
                 file.write('Organismo: ' + record.organism + '\n')
+		for comment in record.comments:
+                    type_c = comment.split(':')
+                    if type_c[0] == 'SUBCELLULAR LOCATION':
+                        file.write('Localización subcelular: '+ comment + '\n')
+		for reference in record.cross_references:
+                    if 'PROSITE' in reference:
+                        file.write(reference[1])
                 file.close()
             # En caso de no encontrarlo, se indica en el archivo
             else:
