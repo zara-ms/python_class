@@ -9,7 +9,7 @@
 
 ## AUTHOR
 
-	Daniela Goretti Castillo Leon
+	Daniela Goretti Castillo Leon <dgoretti@lcg.unam.mx>
 	Jose Rodelmar Ocampo Luna <joserodelmar@gmail.com>
 	Zara Paulina Martinez Sanchez <zaram042001@gmail.com>
 
@@ -122,9 +122,6 @@
 
 # Librerias a usar
 from Bio import ExPASy, SwissProt
-
-# Poner nuestros correos electrónicos para sacar abstracts de Entrez
-# Entrez.email = "dgoretti@lcg.unam.mx"
 
 # Crear una función que tome una lista de terminos GO y una lista de IDs de UniProt
 def get_swissprot(go, ids):
