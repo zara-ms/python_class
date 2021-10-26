@@ -128,53 +128,22 @@ def get_swissprot(go, ids):
         # Buscar si algun termino GO aparece en el archivo
         for GO in go:
             # En caso de encontrarlo
-            if record.cross_references[2][1] == GO:
-                # Obtener la informacion
-                file = open("GO_in_ID.txt", "a")
-                file.write('El ID es: ' + ID + '\n')
-                file.write('Nombre de proteina: ' + record.description.split(';')[0] + '\n')
-                file.write('Nombre y definicion del GO: ' + GO + record.cross_references[2][2] + '\n')
-                file.write('Organismo: ' + record.organism + '\n')
-		for comment in record.comments:
-                    type_c = comment.split(':')
-                    if type_c[0] == 'SUBCELLULAR LOCATION':
-                        file.write('Localización subcelular: '+ comment + '\n')
-		for reference in record.cross_references:
-                    if 'PROSITE' in reference:
-                        file.write('Referencia en PROSITE ' + reference[1])
-                file.close()
-            # En caso de no encontrarlo, se indica en el archivo
-            else:
-                file = open("GO_in_ID.txt", "a")
-                file.write('No existe el ' + GO + ' en el ID ' + ID + '\n')
-                file.close()
-                
-                # Imprimir localización subcelular:
-                for comment in record.comments:
-                    type_c = comment.split(':')
-                    if type_c[0] == 'SUBCELLULAR LOCATION':
-                        print('Localización subcelular: ', comment, '\n')
-
-                # Abstract de fuente - Sacar ID de Pubmed
-                # print('Abstract de una de las fuentes: ')
-                # fetch_handle = Entrez.efetch(db="pubmed", id= id_pubmed, rettype="abstract", retmode="text")
-                # data = fetch_handle.read()
-                # fetch_handle.close()
-                # print(data)
-
-                # Imprimir PROSITE
-                for reference in record.cross_references:
-                    if 'PROSITE' in reference:
-                        print(reference[1])
-
-                        # handle = ExPASy.get_prosite_raw(reference[1])
-                        # record = Prosite.read(handle)
-                        # print(record.name)  # Imprime PAN
-
-                        # handle = ExPASy.get_prosite_raw(record.pdoc)
-                        # record = Prodoc.read(handle)
-                        # print(record.text)
-
+                for GOs in record.cross_references[1:]:
+                	if GOs[1] == GO:
+                		# Obtener la informacion
+                		file = open("GO_in_ID.txt", "a")
+                		file.write('El ID es: ' + ID + '\n')
+                		file.write('Nombre de proteina: ' + record.description.split(';')[0] + '\n')
+                		file.write('Nombre y definicion del GO: ' + GO + record.cross_references[2][2] + '\n')
+                		file.write('Organismo: ' + record.organism + '\n')
+				for comment in record.comments:
+                    			type_c = comment.split(':')
+                    			if type_c[0] == 'SUBCELLULAR LOCATION':
+                        			file.write('Localización subcelular: '+ comment + '\n')
+				for reference in record.cross_references:
+                    			if 'PROSITE' in reference:
+                        			file.write('Referencia en PROSITE ' + reference[1] + '\n')
+                		file.close()
 
 GO_Terms = ["GO:0046755", "GO:0046761",
               "GO:0046760", "GO:0039702",
